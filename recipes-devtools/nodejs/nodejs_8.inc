@@ -84,8 +84,8 @@ do_install_append_class-target() {
 PACKAGES =+ "${PN}-npm"
 FILES_${PN}-npm = "${exec_prefix}/lib/node_modules ${bindir}/npm"
 RDEPENDS_${PN}-npm = "bash python-compiler python-shell python-datetime python-subprocess python-multiprocessing python-crypt python-textutils python-netclient python-misc"
-DEPENDS_${PN} =+ "openssl zlib"
-RDEPENDS_${PN} =+ "openssl zlib"
+DEPENDS_${PN} = "openssl zlib"
+RDEPENDS_${PN} = "openssl zlib"
 
 PACKAGES =+ "${PN}-dtrace"
 FILES_${PN}-dtrace = "${exec_prefix}/lib/dtrace"
